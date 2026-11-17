@@ -99,6 +99,34 @@ if (menuButton && navigation) {
     navigation.classList.remove('is-open');
   }));
 }
+const supportsHover = window.matchMedia('(hover: hover)');
+if (navigation) {
+  navigation.querySelectorAll('.nav-dropdown').forEach((dropdown) => {
+    const summary = dropdown.querySelector('summary');
+    const closeWhenUnfocused = () => {
+      if (!dropdown.matches(':hover') && !dropdown.matches(':focus-within')) dropdown.removeAttribute('open');
+    };
+    dropdown.addEventListener('pointerenter', () => {
+      if (supportsHover.matches) dropdown.setAttribute('open', '');
+    });
+    dropdown.addEventListener('pointerleave', () => {
+      if (supportsHover.matches) closeWhenUnfocused();
+    });
+    dropdown.addEventListener('focusin', () => {
+      if (supportsHover.matches) dropdown.setAttribute('open', '');
+    });
+    dropdown.addEventListener('focusout', () => {
+      if (supportsHover.matches) requestAnimationFrame(closeWhenUnfocused);
+    });
+    summary?.addEventListener('click', (event) => {
+      if (supportsHover.matches) {
+        event.preventDefault();
+        dropdown.setAttribute('open', '');
+      }
+    });
+  });
+}
+
 const year = document.querySelector('#current-year');
 if (year) year.textContent = String(new Date().getFullYear());
 

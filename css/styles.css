@@ -46,7 +46,9 @@ button, summary { font: inherit; }
 .nav-dropdown summary { list-style: none; cursor: pointer; }
 .nav-dropdown summary::-webkit-details-marker { display: none; }
 .nav-dropdown summary span { margin-left: 4px; color: var(--blue); }
-.dropdown-panel { position: absolute; top: calc(100% + 20px); left: -18px; z-index: 10; display: grid; min-width: 225px; padding: 10px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); box-shadow: 0 16px 40px rgba(18,51,74,.13); }
+.dropdown-panel { position: absolute; top: calc(100% + 20px); left: -18px; z-index: 10; display: none; min-width: 225px; padding: 10px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); box-shadow: 0 16px 40px rgba(18,51,74,.13); }
+.nav-dropdown[open] > .dropdown-panel { display: grid; }
+.dropdown-panel::before { position: absolute; top: -20px; right: 0; left: 0; height: 20px; content: ""; }
 .dropdown-panel a { padding: 10px 12px; border-radius: 7px; color: var(--ink-soft); font-size: 13px; }
 .dropdown-panel a:hover { background: var(--blue-light); color: var(--blue-dark); }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 16px; min-height: 54px; padding: 0 23px; border: 1px solid var(--gold); border-radius: 5px; background: var(--gold); color: white; font-size: 13px; font-weight: 700; letter-spacing: .01em; transition: transform .2s ease, background .2s ease; }
@@ -268,7 +270,9 @@ h1, h2, h3 { font-family: var(--font-display); }
   .primary-navigation.is-open { display: flex; flex-direction: column; }
   .primary-navigation .nav-link, .nav-dropdown summary { display: block; padding: 13px 4px; border-bottom: 1px solid #edf1f2; }
   .nav-dropdown summary span { float: right; }
-  .dropdown-panel { position: static; min-width: 0; padding: 5px 0 7px 12px; border: 0; border-radius: 0; box-shadow: none; }
+  .dropdown-panel { position: static; display: none; min-width: 0; padding: 5px 0 7px 12px; border: 0; border-radius: 0; box-shadow: none; }
+  .nav-dropdown[open] > .dropdown-panel { display: grid; }
+  .dropdown-panel::before { display: none; }
   .dropdown-panel a { padding: 9px 10px; }
   .nav-cta { align-self: flex-start; margin-top: 14px; }
   .hero-grid { grid-template-columns: 1fr; gap: 18px; min-height: auto; padding-block: 54px 67px; }
