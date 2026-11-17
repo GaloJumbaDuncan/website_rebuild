@@ -112,8 +112,7 @@ Object.assign(window.pageData, {
   'egger-2.html': { redirect: 'egger.html' },
   'firefly.html': { eyebrow: 'Hearing health', title: 'Firefly hearing support', intro: 'Contact Doctors of Hearing to learn about the services and support available through our clinic.', sections: [['Talk to our team', 'We can help direct your enquiry and discuss the next step for your hearing-care needs.']] },
   'heine.html': { eyebrow: 'Audiology equipment', title: 'Heine diagnostic equipment', intro: 'Ask our team about diagnostic tools used during hearing-care appointments.', sections: [['Technology in your appointment', 'Your clinician can explain the purpose of any equipment used as part of your assessment.']] },
-  'maico-diagnostics.html': { eyebrow: 'Audiology equipment', title: 'Maico diagnostics', intro: 'Learn more about audiology diagnostic equipment used in hearing assessment.', sections: [['Clear and careful testing', 'The equipment and tests recommended for you depend on your concerns and clinical assessment.']] }
-
+  'maico-diagnostics.html': { eyebrow: 'Audiology equipment', title: 'Maico diagnostics', intro: 'Learn more about audiology diagnostic equipment used in hearing assessment.', sections: [['Clear and careful testing', 'The equipment and tests recommended for you depend on your concerns and clinical assessment.']] },
   'phonak.html': {
     eyebrow: 'Phonak hearing aids in Kenya', title: 'Hear better. Connect better. Live better.', intro: 'Explore Phonak hearing technology with an audiologist at Doctors of Hearing. The right choice depends on your hearing assessment, preferred style, listening needs and budget.',
     heroImage: 'https://www.phonak.com/content/phonak/int/en/hearing-devices/hearing-aids/_jcr_content/root/container/hero/image.coreimg.png/1793960591462/ph-pic-family-image-esphere-audeo-e-virto-r-1920x1080.png',
