@@ -436,3 +436,21 @@ h1, h2, h3 { font-family: var(--font-display); }
 .brand-product-image { display: block; width: min(100%, 680px); height: auto; margin: 16px 0; border-radius: 18px; }
 
 .dropdown-label { display: block; padding: 9px 13px 4px; color: var(--muted, #657985); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+
+.page-quick-links { margin: 24px 0 20px; padding: 16px 18px; border: 1px solid rgba(18, 51, 74, .14); border-radius: 16px; background: rgba(255, 255, 255, .82); }
+.page-quick-links-label { display: block; margin-bottom: 10px; color: var(--blue-dark, #12334a); font-size: 12px; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; }
+.page-quick-links > div { display: flex; flex-wrap: wrap; gap: 8px; }
+.page-quick-links a { display: inline-flex; align-items: center; gap: 7px; padding: 8px 11px; border: 1px solid rgba(18, 51, 74, .15); border-radius: 999px; color: var(--blue-dark, #12334a); background: #fff; font-size: 13px; font-weight: 650; text-decoration: none; }
+.page-quick-links a:hover, .page-quick-links a:focus-visible { color: #fff; background: var(--blue-dark, #12334a); }
+
+.page-quick-links { margin: 24px 0 20px; padding: 18px; border: 1px solid rgba(18, 51, 74, .14); border-radius: 18px; background: rgba(255, 255, 255, .86); }
+.page-quick-links-label { display: block; margin-bottom: 12px; color: var(--blue-dark, #12334a); font-size: 12px; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; }
+.page-quick-links > div { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.page-quick-links .social-card { display: flex; min-height: 70px; align-items: center; gap: 12px; padding: 12px 14px; border: 1px solid rgba(18, 51, 74, .14); border-radius: 14px; color: var(--blue-dark, #12334a); background: #fff; text-decoration: none; transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+.page-quick-links .social-card:hover, .page-quick-links .social-card:focus-visible { transform: translateY(-2px); border-color: rgba(18, 51, 74, .42); box-shadow: 0 8px 20px rgba(18, 51, 74, .1); }
+.social-card-mark { display: grid; width: 42px; height: 42px; flex: 0 0 42px; place-items: center; border-radius: 12px; color: #fff; background: var(--blue-dark, #12334a); font-size: 19px; font-weight: 800; }
+.social-card-copy { display: grid; gap: 3px; }
+.social-card-copy strong { font-size: 14px; }
+.social-card-copy small { color: #627783; font-size: 12px; }
+.social-card-arrow { margin-left: auto; font-size: 16px; }
+@media (max-width: 560px) { .page-quick-links > div { grid-template-columns: 1fr; } }
