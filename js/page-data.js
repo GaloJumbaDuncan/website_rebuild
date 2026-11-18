@@ -147,7 +147,7 @@ Object.assign(window.pageData, {
   'maico-diagnostics.html': { eyebrow: 'Audiology equipment', title: 'Maico diagnostics', intro: 'Learn more about audiology diagnostic equipment used in hearing assessment.', sections: [['Clear and careful testing', 'The equipment and tests recommended for you depend on your concerns and clinical assessment.']] },
   'deaf-cyclists.html': {
     eyebrow: 'One team. One vision. No limits.', title: 'Doctors of Hearing Kenya Deaf Cyclists', intro: 'Riding beyond barriers. Inspiring possibilities. Celebrating inclusion. A movement founded by Richard Mwangi and proudly supported by Doctors of Hearing – Kenya.',
-    heroImage: 'assets/clinic-consultation.jpg',
+    heroImage: 'assets/deaf-cyclists-group.jpg', heroAlt: 'Doctors of Hearing Deaf Cyclists team together outdoors',
     quickLinks: [
       { platform: 'Facebook', audience: 'Deaf Cyclists', mark: 'f', href: 'https://www.facebook.com/share/1JNKw3qHYq/?mibextid=wwXIfr' },
       { platform: 'TikTok', audience: 'Deaf Cyclists', mark: '♪', href: 'https://www.tiktok.com/@doh.cyclists_2026?_r=1&_t=ZS-9BL2bacY6Wi' },

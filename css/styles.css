@@ -62,6 +62,7 @@ button, summary { font: inherit; }
 .hero { position: relative; overflow: hidden; background: var(--blue-light); }
 .page-hero { overflow: hidden; background: var(--blue-light); }
 .page-hero-grid { display: grid; grid-template-columns: 1fr .88fr; align-items: center; gap: clamp(42px, 8vw, 108px); min-height: 390px; padding-block: 58px; }
+.page-hero-grid-no-image { grid-template-columns: minmax(0, 1fr); }
 .page-hero h1 { max-width: 670px; margin-bottom: 19px; font-size: clamp(42px, 5.6vw, 68px); font-weight: 600; letter-spacing: -.06em; line-height: 1.04; }
 .page-intro { max-width: 610px; margin-bottom: 26px; color: var(--ink-soft); font-size: 17px; line-height: 1.75; }
 .page-hero figure { position: relative; height: 270px; margin: 0; overflow: hidden; border-radius: 5px; background: var(--blue-light); }
@@ -361,7 +362,7 @@ h1, h2, h3 { font-family: var(--font-display); }
 .home-page .nav-link:hover, .home-page .nav-dropdown summary:hover, .home-page .nav-link.active { color: var(--mint); }
 .home-page .nav-dropdown summary span { color: var(--mint); }
 .home-page .nav-cta { white-space: nowrap; }
-.home-page .hero { display: flex; min-height: min(720px, calc(100svh - 78px)); align-items: center; background-color: var(--blue-dark); background-image: linear-gradient(90deg, rgba(10,34,52,.73), rgba(12,44,66,.55) 52%, rgba(10,34,52,.67)), url('../assets/clinic-team-banner.jpg'); background-position: center 48%; background-size: cover; color: white; }
+.home-page .hero { display: flex; min-height: min(720px, calc(100svh - 115px)); align-items: center; background-color: var(--blue-dark); background-image: linear-gradient(90deg, rgba(10,34,52,.58), rgba(12,44,66,.38) 52%, rgba(10,34,52,.5)), url('../assets/homepage-banner.jpg'); background-position: center 48%; background-size: cover; color: white; }
 .cyclist-gallery { padding-block: 54px 78px; }
 .cyclist-gallery h2 { margin: 0 0 24px; font-size: clamp(30px,4vw,44px); letter-spacing: -.04em; }
 .cyclist-gallery-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; }
