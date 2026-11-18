@@ -1,23 +1,25 @@
 const menuMarkup = `
   <div class="topbar"><div class="container topbar-inner"><p>Thoughtful hearing and balance care in Kenya</p><a href="contact-us.html">Contact our team <span aria-hidden="true">↗</span></a></div></div>
   <header class="site-header"><div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="Doctors of Hearing home"><img src="assets/doh-logo-300x156.png" alt="Doctors of Hearing" width="300" height="156"></a>
+    <a class="brand" href="index.html" aria-label="Doctors of Hearing home"><img src="assets/doctors-of-hearing-logo.png" alt="Doctors of Hearing" width="300" height="156"></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation"><span></span><span></span><span></span></button>
     <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
       <a class="nav-link" href="index.html">Home</a>
-      <details class="nav-dropdown"><summary>Our care <span aria-hidden="true">⌄</span></summary><div class="dropdown-panel"><a href="hearing-care-services.html">Hearing care services</a><a href="hearing-balance-testing.html">Hearing &amp; balance testing</a><a href="paediatric-audiology.html">Paediatric audiology</a><a href="home-visits.html">Home visits</a><span class="dropdown-label">Hearing health</span><a href="hearing-disorders.html">Hearing disorders</a><a href="tinnitus-ringing-in-the-ears.html">Tinnitus</a><a href="balance.html">Balance</a><a href="hearing-loss-in-children.html">Children's hearing</a><a href="prevention.html">Hearing protection</a></div></details>
-      <details class="nav-dropdown"><summary>Hearing aids <span aria-hidden="true">⌄</span></summary><div class="dropdown-panel"><a href="hearing-aids-kenya.html">Hearing aids in Kenya</a><a href="phonak.html">Phonak</a><a href="starkey.html">Starkey</a><a href="batteries.html">Batteries &amp; care</a></div></details>
-      <a class="nav-link" href="deaf-cyclists.html">Deaf Cyclists</a><a class="nav-link" href="richard-mwangi.html">Our team</a><a class="nav-link" href="resources.html">Resources</a><a class="nav-link" href="contact-us.html">Contact</a>
+      <details class="nav-dropdown"><summary>Our care <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary><div class="dropdown-panel"><a href="how-can-we-help.html">How can we help?</a><a href="hearing-balance-testing.html">Hearing &amp; balance testing</a><a href="paediatric-audiology.html">Paediatric audiology</a><a href="home-visits.html">Home visits</a></div></details>
+      <details class="nav-dropdown"><summary>Hearing aids <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary><div class="dropdown-panel"><a href="hearing-aids-kenya.html">Hearing aids in Kenya</a><a href="rechargeable-hearing-aids-kenya.html">Rechargeable hearing aids</a><a href="batteries.html">Batteries &amp; care</a></div></details>
+      <a class="nav-link" href="deaf-cyclists.html">Deaf Cyclists</a><a class="nav-link" href="richard-mwangi.html">Our team</a>
+      <details class="nav-dropdown"><summary>Resources <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary><div class="dropdown-panel"><a href="resources.html">All resources</a><a href="hearing-check.html">Schedule a hearing test</a><a href="hearing-care-services.html">Hearing care services</a><span class="dropdown-label">Hearing health</span><a href="hearing-disorders.html">Hearing disorders</a><a href="tinnitus-ringing-in-the-ears.html">Tinnitus</a><a href="balance.html">Balance</a><a href="hearing-loss-in-children.html">Children's hearing</a><a href="prevention.html">Hearing protection</a></div></details><a class="nav-link" href="contact-us.html">Contact</a>
       <a class="button button-small nav-cta" href="contact-us.html">Book an appointment <span aria-hidden="true">↗</span></a>
     </nav>
-  </div></header>`;
+  </div></header>
+  <div class="social-bar" aria-label="Follow Doctors of Hearing"><div class="container social-bar-inner"><span>Stay connected</span><a href="https://web.facebook.com/DoctorsOfHearing?_rdc=1&amp;_rdr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a href="https://www.instagram.com/docsofhearing/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a><a href="https://www.youtube.com/channel/UCBskCqv_ZfF2Rd4tkjsEcGQ" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a><a href="https://www.tiktok.com/@doctorsofhearing" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a></div></div>`;
 
 const footerMarkup = `
   <footer class="site-footer"><div class="container footer-main">
-    <div class="footer-brand"><a href="index.html"><img src="assets/doh-logo-300x156.png" alt="Doctors of Hearing" width="300" height="156"></a><p>Hearing and balance care, with clear information and support for every step.</p></div>
-    <div class="footer-column"><h2>Explore</h2><a href="hearing-care-services.html">Our services</a><a href="deaf-cyclists.html">Deaf Cyclists</a><a href="hearing-aids-kenya.html">Hearing aids in Kenya</a><a href="hearing-balance-testing.html">Hearing &amp; balance tests</a><a href="richard-mwangi.html">Our team</a><a href="contact-us.html">Contact us</a></div>
+    <div class="footer-brand"><a href="index.html"><img src="assets/doctors-of-hearing-logo.png" alt="Doctors of Hearing" width="300" height="156"></a><p>Hearing and balance care, with clear information and support for every step.</p><div class="footer-social" aria-label="Follow Doctors of Hearing"><a href="https://web.facebook.com/DoctorsOfHearing?_rdc=1&amp;_rdr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a href="https://www.instagram.com/docsofhearing/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a><a href="https://www.youtube.com/channel/UCBskCqv_ZfF2Rd4tkjsEcGQ" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a><a href="https://www.tiktok.com/@doctorsofhearing" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a></div></div>
+    <div class="footer-column"><h2>Explore</h2><a href="deaf-cyclists.html">Deaf Cyclists</a><a href="hearing-aids-kenya.html">Hearing aids in Kenya</a><a href="rechargeable-hearing-aids-kenya.html">Rechargeable hearing aids</a><a href="hearing-balance-testing.html">Hearing &amp; balance tests</a><a href="richard-mwangi.html">Our team</a><a href="contact-us.html">Contact us</a></div>
     <div class="footer-column"><h2>Hearing health</h2><a href="hearing-disorders.html">Hearing disorders</a><a href="tinnitus-ringing-in-the-ears.html">Tinnitus</a><a href="balance.html">Balance</a><a href="prevention.html">Hearing protection</a></div>
-    <div class="footer-column"><h2>Discover</h2><a href="ask-the-audiologist.html">Ask the audiologist</a><a href="testimonials.html">Patient experiences</a><a href="thesis-and-research.html">Thesis &amp; research</a><a href="resources.html">Resources</a></div>
+    <div class="footer-column"><h2>Discover</h2><a href="hearing-check.html">Schedule a hearing test</a><a href="hearing-care-services.html">Hearing care services</a><a href="ask-the-audiologist.html">Ask the audiologist</a><a href="testimonials.html">Patient experiences</a><a href="thesis-and-research.html">Thesis &amp; research</a><a href="resources.html">Resources</a></div>
   </div><div class="container footer-bottom"><span>© <span id="current-year"></span> Doctors of Hearing</span><span>Hearing &amp; balance care in Kenya</span><a href="#main">Back to top ↑</a></div></footer>`;
 
 function renderArticlePage() {
@@ -29,15 +31,11 @@ function renderArticlePage() {
   if (data.redirect) { location.replace(data.redirect); return; }
   const seoTitles = {
     'hearing-aids-kenya.html': 'Hearing Aids in Kenya | Assessment & Fitting in Nairobi',
-    'phonak.html': 'Phonak Hearing Aids in Kenya | Doctors of Hearing',
-    'starkey.html': 'Starkey Hearing Aids in Kenya | Doctors of Hearing',
     'deaf-cyclists.html': 'Doctors of Hearing Kenya Deaf Cyclists | Our Story',
     'our-journey-recognised-by-the-media.html': 'Deaf Cyclists in Kenya | Media Coverage | Doctors of Hearing'
   };
   const seoDescriptions = {
     'hearing-aids-kenya.html': 'Explore hearing aids in Kenya with professional assessment, personalised recommendations, fitting and aftercare from Doctors of Hearing in Nairobi.',
-    'phonak.html': 'Explore Phonak hearing aids in Kenya, compare styles and features, and ask Doctors of Hearing in Nairobi about assessment, fitting and current availability.',
-    'starkey.html': 'Learn about Starkey AI hearing aids in Kenya. Compare suitable models and ask Doctors of Hearing in Nairobi about assessment, fitting and availability.',
     'deaf-cyclists.html': 'Meet the Doctors of Hearing Kenya Deaf Cyclists: a team promoting inclusion, visibility and sporting opportunities for Deaf and hard-of-hearing riders.',
     'our-journey-recognised-by-the-media.html': 'Read media coverage of the Doctors of Hearing Kenya Deaf Cyclists and their work promoting inclusion through cycling.'
   };
@@ -66,11 +64,14 @@ function renderArticlePage() {
   schema.textContent = JSON.stringify(structuredData);
   const profilesMarkup = data.profiles ? `<section class="profile-list${data.profilesAtTop ? ' profile-list-top' : ''}" aria-label="Our specialists">${data.profiles.map((person) => `<article class="profile-card"><img src="${person.image}" alt="${person.alt}" loading="lazy"><div class="profile-copy"><p class="eyebrow">${person.role}</p><h2>${person.name}</h2><p class="profile-credentials">${person.credentials}</p>${person.bio.map((paragraph) => `<p>${paragraph}</p>`).join('')}</div></article></section>`).join('')}</section>` : '';
   const topProfilesMarkup = data.profilesAtTop ? `<div class="container">${profilesMarkup}</div>` : '';
+  const galleryMarkup = data.gallery?.length ? `<section class="cyclist-gallery container" aria-label="Deaf Cyclists photo gallery"><h2>On the road together</h2><div class="cyclist-gallery-grid">${data.gallery.map((photo) => `<figure><img src="${photo.image}" alt="${photo.alt}" loading="lazy"></figure>`).join('')}</div></section>` : '';
+  const productGalleryMarkup = data.productGallery?.length ? `<section class="product-gallery container" aria-label="Rechargeable hearing aid styles"><h2>Explore hearing aid styles</h2><div class="product-gallery-grid">${data.productGallery.map((photo) => `<figure><img src="${photo.image}" alt="${photo.alt}" loading="lazy"><figcaption>${photo.caption}</figcaption></figure>`).join('')}</div></section>` : '';
+  const faqMarkup = data.faq?.length ? `<section class="faq-section container" aria-label="Frequently asked questions"><h2>Frequently asked questions about rechargeable hearing aids</h2><div class="faq-list">${data.faq.map(([question, answer]) => `<details><summary>${question}</summary><p>${answer}</p></details>`).join('')}</div></section>` : '';
   const quickLinksMarkup = data.quickLinks?.length ? `<nav class="page-quick-links" aria-label="Social media quick links"><span class="page-quick-links-label">Follow Doctors of Hearing &amp; Deaf Cyclists</span><div>${data.quickLinks.map((link) => `<a class="social-card" href="${link.href}" target="_blank" rel="noopener noreferrer"><span class="social-card-mark" aria-hidden="true">${link.mark}</span><span class="social-card-copy"><strong>${link.platform}</strong><small>${link.audience}</small></span><span class="social-card-arrow" aria-hidden="true">↗</span></a>`).join('')}</div></nav>` : '';
   mount.innerHTML = `
     <section class="page-hero"><div class="container page-hero-grid"><div><p class="eyebrow"><span class="eyebrow-line"></span>${data.eyebrow}</p><h1>${data.title}</h1><p class="page-intro">${data.intro}</p>${quickLinksMarkup}<a class="button" href="contact-us.html">Talk to our team <span aria-hidden="true">↗</span></a></div><figure><img src="${data.heroImage || 'assets/clinic-consultation.jpg'}" alt="${data.heroAlt || 'A patient and hearing professional talking in the clinic'}"><figcaption>Doctors of Hearing · Kenya</figcaption></figure></div></section>
     <div class="container page-layout"><article class="page-article">${data.sections.map(([heading, body]) => `<section><h2>${heading}</h2><p>${body}</p></section>`).join('')}${data.profilesAtTop ? '' : profilesMarkup}${data.contact ? '<section class="contact-details"><h2>Contact details</h2><p><a href="tel:+254733112555">+254 733 112 555</a><br><a href="tel:+254724535224">+254 724 535 224</a><br><a href="tel:+254722112555">+254 722 112 555</a><br><a href="mailto:info@doctorsofhearing.org">info@doctorsofhearing.org</a></p></section><section class="contact-form-section"><h2>Send us a message</h2><form class="contact-form" action="https://formsubmit.co/info@doctorsofhearing.org" method="POST"><input type="hidden" name="_subject" value="New contact enquiry from Doctors of Hearing website"><input type="hidden" name="_url" value="https://doctorsofhearing.org/contact-us.html"><input type="text" name="_honey" tabindex="-1" autocomplete="off" class="contact-honey"><label>Full name<input name="name" autocomplete="name" required></label><label>Phone number<input name="phone" type="tel" autocomplete="tel" required></label><label>Email address<input name="email" type="email" autocomplete="email" required></label><label>Subject<input name="subject" required></label><label class="contact-message">How can we help?<textarea name="message" rows="5" required></textarea></label><button class="button" type="submit">Send message <span aria-hidden="true">↗</span></button></form></section>' : ''}</article><aside class="page-aside"><span class="aside-symbol" aria-hidden="true">✳</span><p class="eyebrow">Here to help</p><h2>Let’s find the right next step.</h2><p>Our team can answer questions and help you enquire about an appointment.</p><a class="text-link" href="contact-us.html">Contact the clinic <span aria-hidden="true">→</span></a></aside></div>
-    <section class="page-contact-band"><div class="container"><div><p class="eyebrow eyebrow-light">Doctors of Hearing · Kenya</p><h2>Ready to talk with our team?</h2></div><a class="button button-light" href="contact-us.html">Book an appointment <span aria-hidden="true">↗</span></a></div></section>${topProfilesMarkup}`;
+    ${productGalleryMarkup}${faqMarkup}${galleryMarkup}<section class="page-contact-band"><div class="container"><div><p class="eyebrow eyebrow-light">Doctors of Hearing · Kenya</p><h2>Ready to talk with our team?</h2></div><a class="button button-light" href="contact-us.html">Book an appointment <span aria-hidden="true">↗</span></a></div></section>${topProfilesMarkup}`;
   document.querySelector('#shared-header').innerHTML = menuMarkup;
   document.querySelector('#shared-footer').innerHTML = footerMarkup;
   document.querySelectorAll('.primary-navigation a').forEach((link) => {
@@ -138,3 +139,20 @@ if (bookingDialog) {
     if (event.target === bookingDialog) bookingDialog.close();
   });
 }
+
+document.querySelectorAll('.review-card').forEach((card) => {
+  const quote = card.querySelector('.review-quote');
+  const toggle = card.querySelector('.review-toggle');
+  if (!quote || !toggle) return;
+
+  quote.classList.add('is-collapsed');
+  toggle.hidden = quote.scrollHeight <= quote.clientHeight + 1;
+  if (toggle.hidden) quote.classList.remove('is-collapsed');
+
+  toggle.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!expanded));
+    quote.classList.toggle('is-collapsed', expanded);
+    toggle.textContent = expanded ? 'Read more' : 'Read less';
+  });
+});
