@@ -3,29 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Arrange a professional hearing test with Doctors of Hearing by contact form or WhatsApp.">
+  <meta name="description" content="Try an informal online hearing check from Doctors of Hearing. It is for information only and does not replace a professional hearing assessment.">
   <meta name="theme-color" content="#12334a">
-  <title>Schedule a Hearing Test | Doctors of Hearing</title>
+  <title>Try an Online Hearing Check | Doctors of Hearing</title>
   <link rel="icon" type="image/png" sizes="128x128" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/favicon.png">
   <link rel="canonical" href="https://doctorsofhearing.org/hearing-check.html">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Doctors of Hearing">
-  <meta property="og:title" content="Schedule a Hearing Test | Doctors of Hearing">
-  <meta property="og:description" content="Arrange a professional hearing test with Doctors of Hearing by contact form or WhatsApp.">
+  <meta property="og:title" content="Try an Online Hearing Check | Doctors of Hearing">
+  <meta property="og:description" content="Try an informal online hearing check. It is for information only and does not replace a professional hearing assessment.">
   <meta property="og:url" content="https://doctorsofhearing.org/hearing-check.html">
   <meta property="og:image" content="https://doctorsofhearing.org/assets/doctors-of-hearing-logo.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Schedule a Hearing Test | Doctors of Hearing">
-  <meta name="twitter:description" content="Arrange a professional hearing test with Doctors of Hearing by contact form or WhatsApp.">
+  <meta name="twitter:title" content="Try an Online Hearing Check | Doctors of Hearing">
+  <meta name="twitter:description" content="Try an informal online hearing check. It is for information only and does not replace a professional hearing assessment.">
   <meta name="twitter:image" content="https://doctorsofhearing.org/assets/doctors-of-hearing-logo.png">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalOrganization","name":"Doctors of Hearing","url":"https://doctorsofhearing.org/","logo":"https://doctorsofhearing.org/assets/doctors-of-hearing-logo.png","email":"info@doctorsofhearing.org","telephone":["+254733112555","+254705112555","+254724535224","+254722112555"],"areaServed":{"@type":"City","name":"Nairobi"},"sameAs":["https://www.youtube.com/channel/UCBskCqv_ZfF2Rd4tkjsEcGQ","https://www.instagram.com/docsofhearing/","https://web.facebook.com/DoctorsOfHearing?_rdc=1&_rdr#","https://www.tiktok.com/@doctorsofhearing"]}</script>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/hearing-screen.css">
   <script src="js/main.js" defer></script>
+  <script src="js/hearing-screen.js" defer></script>
 </head>
-<body class="home-page">
+<body class="hearing-check-site">
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="topbar"><div class="container topbar-inner"><p>Thoughtful hearing and balance care in Kenya</p><a href="contact-us.html">Contact our team <span aria-hidden="true">↗</span></a></div></div>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Doctors of Hearing home">
@@ -53,13 +56,12 @@
           </div>
         </details>
         <a class="nav-link" href="deaf-cyclists.html">Deaf Cyclists</a>
-        <a class="nav-link" href="richard-mwangi.html">Our team</a>
+        <a class="nav-link" href="our-team.html">Our team</a>
         <details class="nav-dropdown">
           <summary>Resources <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary>
           <div class="dropdown-panel">
-            <a href="resources.html">All resources</a>
-            <a href="hearing-check.html" aria-current="page">Schedule a hearing test</a>
-            <a href="hearing-care-services.html">Hearing care services</a>
+            <a href="resources.html">BLOG</a>
+            <a href="hearing-check.html" aria-current="page">Try an online hearing test</a>
             <span class="dropdown-label">Hearing health</span>
             <a href="hearing-disorders.html">Hearing disorders</a>
             <a href="tinnitus-ringing-in-the-ears.html">Tinnitus</a>
@@ -83,37 +85,35 @@
     </div>
   </div>
 
-  <main id="main" class="hearing-check-page">
-    <section class="hearing-check-hero">
-      <div class="container">
-        <p class="eyebrow"><span class="eyebrow-line"></span> A first step toward better hearing</p>
-        <h1>Arrange a hearing test.</h1>
-        <p class="page-intro">Contact Doctors of Hearing to schedule a professional hearing assessment and talk with our team about a suitable appointment.</p>
-        <div class="hearing-check-card">
-          <div><p class="eyebrow">Book with our team</p><h2>Choose how to get in touch.</h2><p>Send an appointment request using our contact form, or message us on WhatsApp to arrange a hearing test.</p></div>
-          <div class="hearing-check-actions"><a class="button" href="contact-us.html">Request by email <span aria-hidden="true">↗</span></a><a class="button button-outline" href="https://wa.me/254733112555?text=Hello%20Doctors%20of%20Hearing%2C%20I%20would%20like%20to%20schedule%20a%20hearing%20test." target="_blank" rel="noopener noreferrer">Message on WhatsApp <span aria-hidden="true">↗</span></a></div>
-        </div>
-      </div>
+  <main id="hc-app" class="hc-app">
+    <section class="screen active" id="welcome-screen" aria-labelledby="welcome-title">
+      <div class="hero-grid"><div class="hero-copy"><p class="eyebrow">A MOMENT FOR YOUR HEARING</p><h1 id="welcome-title">How well are<br>you <span>hearing?</span></h1><p class="lead">Answer a few questions, check your headphones, then listen to a series of sounds and spoken words.</p><ul class="benefits"><li><span>✓</span> About 5 minutes</li><li><span>✓</span> Checks each ear in turn</li><li><span>✓</span> No account required</li></ul><button class="button primary" data-go="how-screen">Start hearing check <span>→</span></button><p class="microcopy">Find a quiet place and use stereo headphones at a comfortable volume.</p></div><div class="hero-art" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="sound-rings"><i></i><i></i><i></i></div><div class="headphone">♫</div><div class="art-caption">Listen. Respond. Learn.</div></div></div>
+      <div class="notice"><strong>For information only:</strong> This online hearing test demonstration is not a calibrated hearing test, diagnosis, or substitute for an assessment with a hearing-care professional.</div>
     </section>
-    <section class="container hearing-check-steps">
-      <h2>What happens next</h2>
-      <div class="hearing-step-grid">
-        <article class="hearing-step"><i class="fa-solid fa-envelope" aria-hidden="true"></i><h3>Send a request</h3><p>Tell us you would like to schedule a hearing test and share the best way to reach you.</p></article>
-        <article class="hearing-step"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><h3>Choose a channel</h3><p>Use the contact form or message our team on WhatsApp to discuss appointment options.</p></article>
-        <article class="hearing-step"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i><h3>Meet an audiologist</h3><p>Your hearing is assessed by our audiology team during your scheduled appointment.</p></article>
-      </div>
-      <div class="hearing-check-note"><strong>At your appointment:</strong> An audiologist will discuss your hearing concerns and recommend suitable assessments. A professional evaluation is needed to determine your hearing levels and next steps.</div>
-      <div class="hearing-check-urgent"><strong>Hearing changed suddenly?</strong>If your hearing has suddenly become worse, seek urgent medical care rather than waiting for a routine appointment.</div>
-      <div class="hearing-check-next"><div><h2>Prefer WhatsApp?</h2><p>Send our team a message to arrange your hearing test.</p></div><a class="button button-light" href="https://wa.me/254733112555?text=Hello%20Doctors%20of%20Hearing%2C%20I%20would%20like%20to%20schedule%20a%20hearing%20test." target="_blank" rel="noopener noreferrer">Chat with our team <span aria-hidden="true">↗</span></a></div>
-    </section>
-  </main>
 
+    <section class="screen" id="how-screen"><div class="step-label">HOW IT WORKS <span>1 OF 6</span></div><div class="content-card"><div class="icon-circle">◖♪</div><p class="eyebrow">A FEW SIMPLE STEPS</p><h2>What to expect</h2><p class="muted">First, we'll ask about listening situations that matter to you. Then we'll check your headphones and play sounds and spoken words through them. Tap the response that best matches what you hear.</p><div class="info-list"><div><b>1</b><span><strong>Tell us about your listening</strong><small>Three quick questions about everyday situations.</small></span></div><div><b>2</b><span><strong>Get ready</strong><small>Set up your headphones in a quiet space.</small></span></div><div><b>3</b><span><strong>Listen and respond</strong><small>Sounds are checked in each ear, followed by spoken words.</small></span></div></div><div class="button-row"><button class="button secondary" data-go="welcome-screen">Back</button><button class="button primary" data-go="life1-screen">Continue <span>→</span></button></div></div></section>
+
+    <section class="screen" id="life1-screen"><div class="step-label">ABOUT YOUR LISTENING <span>2 OF 6</span></div><div class="content-card"><p class="eyebrow">QUESTION 1 OF 3</p><h2>How often do you have difficulty hearing in a noisy place?</h2><p class="muted">For example, in a restaurant or busy gathering.</p><div class="choice-list" data-group="life1"><button class="choice">Never</button><button class="choice">Sometimes</button><button class="choice">Often</button><button class="choice">Almost always</button></div><div class="button-row"><button class="button secondary" data-go="how-screen">Back</button><button class="button primary" data-next-choice="life1" data-target="life2-screen" disabled>Continue <span>→</span></button></div></div></section>
+    <section class="screen" id="life2-screen"><div class="step-label">ABOUT YOUR LISTENING <span>2 OF 6</span></div><div class="content-card"><p class="eyebrow">QUESTION 2 OF 3</p><h2>How often do you ask people to repeat themselves?</h2><p class="muted">Think about conversations with family, friends, or colleagues.</p><div class="choice-list" data-group="life2"><button class="choice">Never</button><button class="choice">Sometimes</button><button class="choice">Often</button><button class="choice">Almost always</button></div><div class="button-row"><button class="button secondary" data-go="life1-screen">Back</button><button class="button primary" data-next-choice="life2" data-target="life3-screen" disabled>Continue <span>→</span></button></div></div></section>
+    <section class="screen" id="life3-screen"><div class="step-label">ABOUT YOUR LISTENING <span>2 OF 6</span></div><div class="content-card"><p class="eyebrow">QUESTION 3 OF 3</p><h2>How often is it difficult to hear the TV or a phone?</h2><p class="muted">Choose the answer that best describes your experience.</p><div class="choice-list" data-group="life3"><button class="choice">Never</button><button class="choice">Sometimes</button><button class="choice">Often</button><button class="choice">Almost always</button></div><div class="button-row"><button class="button secondary" data-go="life2-screen">Back</button><button class="button primary" data-next-choice="life3" data-target="setup1-screen" disabled>Continue <span>→</span></button></div></div></section>
+
+    <section class="screen" id="setup1-screen"><div class="step-label">HEADPHONE SETUP <span>3 OF 6</span></div><div class="content-card"><div class="icon-circle">🎧</div><p class="eyebrow">STEP 1 OF 4</p><h2>Put on your headphones</h2><p class="muted">Use stereo headphones that cover or fit over both ears. Make sure the left and right sides are worn correctly.</p><div class="illustration-card"><span> L</span><div class="headphone-line">◖ ━━━ ◗</div><span> R</span></div><div class="button-row"><button class="button secondary" data-go="life3-screen">Back</button><button class="button primary" data-go="setup2-screen">Continue <span>→</span></button></div></div></section>
+    <section class="screen" id="setup2-screen"><div class="step-label">HEADPHONE SETUP <span>3 OF 6</span></div><div class="content-card"><div class="icon-circle">◉</div><p class="eyebrow">STEP 2 OF 4</p><h2>Find a quiet place</h2><p class="muted">Move away from conversations, traffic, music and other background noise. Pause the test if your surroundings change.</p><div class="setup-tip">A quiet room helps you focus on the sounds in this check.</div><div class="button-row"><button class="button secondary" data-go="setup1-screen">Back</button><button class="button primary" data-go="setup3-screen">Continue <span>→</span></button></div></div></section>
+    <section class="screen" id="setup3-screen"><div class="step-label">HEADPHONE SETUP <span>3 OF 6</span></div><div class="content-card"><div class="icon-circle">◖♪</div><p class="eyebrow">STEP 3 OF 4</p><h2>Set a comfortable volume</h2><p class="muted">Start at a low level and increase it just enough to hear comfortably. Do not turn it up to an uncomfortable level.</p><label class="volume-label" for="volume-range">Device volume <span>Adjust using your device controls</span></label><div class="volume-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="button-row"><button class="button secondary" data-go="setup2-screen">Back</button><button class="button primary" data-go="setup4-screen">Continue <span>→</span></button></div></div></section>
+    <section class="screen" id="setup4-screen"><div class="step-label">HEADPHONE SETUP <span>3 OF 6</span></div><div class="content-card"><div class="icon-circle">✓</div><p class="eyebrow">STEP 4 OF 4</p><h2>Ready to begin?</h2><p class="muted">Keep your headphones on and stay somewhere quiet. You'll hear a short tone check in your right and left ears.</p><label class="check-row confirm-row"><input type="checkbox" id="ready-check"><span><b>I'm ready to start</b><small>I understand this is an informal demonstration.</small></span></label><div class="button-row"><button class="button secondary" data-go="setup3-screen">Back</button><button class="button primary" id="begin-sound" disabled>Start sound check <span>→</span></button></div></div></section>
+
+    <section class="screen" id="tone-screen"><div class="step-label">SOUND CHECK <span id="tone-step">4 OF 6</span></div><div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div><div class="test-card"><p class="eyebrow" id="ear-label">RIGHT EAR</p><h2>Do you hear the tone?</h2><p class="muted">A sound will play briefly. Tap “I heard it” if you can hear it.</p><div class="tone-visual" aria-hidden="true"><div class="pulse pulse-a"></div><div class="pulse pulse-b"></div><div class="pulse pulse-c"></div><div class="tone-core">♫</div></div><p class="frequency" id="frequency-label">Sound 1 of 5</p><div class="audio-status" id="audio-status" aria-live="polite">Press play when you're ready.</div><div class="button-row centered"><button class="button secondary" id="play-tone">▶ Play sound</button></div><div class="response-row"><button class="button response no" id="not-heard" disabled>I didn't hear it</button><button class="button response yes" id="heard" disabled>I heard it</button></div><p class="microcopy center">You can replay each sound. Keep the volume comfortable.</p></div></section>
+
+    <section class="screen" id="speech-screen"><div class="step-label">SPEECH CHECK <span>5 OF 6</span></div><div class="progress-track"><div class="progress-fill" style="width:85%"></div></div><div class="test-card"><p class="eyebrow">BOTH EARS</p><h2>Listen to the words</h2><p class="muted">Play each word and choose the one you heard. You can replay it if needed.</p><div class="speech-word" id="speech-word">Ready?</div><div class="audio-status" id="speech-status" aria-live="polite">Press play to hear a word.</div><button class="button secondary" id="play-word">▶ Play word</button><div class="choice-list speech-choices" id="speech-choices"></div><div class="button-row"><button class="button secondary" id="speech-back">Back</button><button class="button primary" id="speech-next" disabled>Continue <span>→</span></button></div><p class="microcopy center">Speech playback uses your browser's available voice. Performance can vary by device.</p></div></section>
+
+  <section class="screen" id="results-screen"><div class="step-label">YOUR SUMMARY <span>6 OF 6</span></div><div class="content-card results-card"><div class="icon-circle">✓</div><p class="eyebrow">CHECK COMPLETE</p><h2>Your hearing check summary</h2><p class="muted">Here is a summary of your responses in this browser session.</p><div class="result-grid"><div class="result-box"><span>Right ear</span><strong id="right-result">—</strong><small id="right-detail"></small></div><div class="result-box"><span>Left ear</span><strong id="left-result">—</strong><small id="left-detail"></small></div></div><div class="result-message" id="result-message"></div><div class="result-message lifestyle-summary" id="lifestyle-summary"></div><p class="disclaimer">This demonstration is not calibrated, does not measure hearing thresholds in dB HL and cannot diagnose hearing loss. Results may be affected by your headphones, device, browser and surroundings. If you have concerns about your hearing, arrange an assessment with a qualified hearing-care professional.</p><div class="button-row"><button class="button secondary" id="restart-btn">Start again</button><button class="button secondary" id="print-btn">Print summary</button><a class="button primary book-link" href="contact-us.html" target="_blank" rel="noopener noreferrer">Book an assessment <span>→</span></a></div><p class="microcopy">Contact Doctors of Hearing to discuss a professional hearing assessment.</p></div></section>
+  </main>
   <footer class="site-footer">
     <div class="container footer-main">
       <div class="footer-brand"><a href="index.html"><img src="assets/doctors-of-hearing-logo.png" alt="Doctors of Hearing" width="300" height="156" loading="lazy"></a><p>Hearing and balance care, with clear information and support for every step.</p><div class="footer-social" aria-label="Follow Doctors of Hearing"><a href="https://web.facebook.com/DoctorsOfHearing?_rdc=1&amp;_rdr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a href="https://www.instagram.com/docsofhearing/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a><a href="https://www.youtube.com/channel/UCBskCqv_ZfF2Rd4tkjsEcGQ" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a><a href="https://www.tiktok.com/@doctorsofhearing" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a></div></div>
-      <div class="footer-column"><h2>Explore</h2><a href="hearing-aids-kenya.html">Hearing aids in Kenya</a><a href="rechargeable-hearing-aids-kenya.html">Rechargeable hearing aids</a><a href="hearing-balance-testing.html">Hearing &amp; balance tests</a><a href="richard-mwangi.html">Our team</a><a href="contact-us.html">Contact us</a></div>
+      <div class="footer-column"><h2>Explore</h2><a href="hearing-aids-kenya.html">Hearing aids in Kenya</a><a href="rechargeable-hearing-aids-kenya.html">Rechargeable hearing aids</a><a href="hearing-balance-testing.html">Hearing &amp; balance tests</a><a href="our-team.html">Our team</a><a href="contact-us.html">Contact us</a></div>
       <div class="footer-column"><h2>Hearing health</h2><a href="hearing-disorders.html">Hearing disorders</a><a href="tinnitus-ringing-in-the-ears.html">Tinnitus</a><a href="balance.html">Balance</a><a href="protecting-your-hearing.html">Hearing protection</a></div>
-      <div class="footer-column"><h2>Discover</h2><a href="hearing-check.html">Schedule a hearing test</a><a href="hearing-care-services.html">Hearing care services</a><a href="ask-the-audiologist.html">Ask the audiologist</a><a href="testimonials.html">Patient experiences</a><a href="thesis-and-research.html">Thesis &amp; research</a><a href="resources.html">Resources</a></div>
+      <div class="footer-column"><h2>Discover</h2><a href="hearing-check.html">Schedule a hearing test</a><a href="hearing-care-services.html">Hearing care services</a><a href="ask-the-audiologist.html">Ask the audiologist</a><a href="testimonials.html">Patient experiences</a><a href="thesis-and-research.html">Thesis &amp; research</a><a href="resources.html">BLOG</a></div>
     </div>
     <div class="container footer-bottom"><span>© <span id="current-year">2025</span> Doctors of Hearing</span><span>Hearing &amp; balance care in Kenya</span><a href="#main">Back to top ↑</a></div>
   </footer>
