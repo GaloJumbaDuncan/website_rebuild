@@ -185,10 +185,10 @@ Object.assign(window.pageData, {
     gallery: [
       { image: 'assets/deaf-cyclists-ride.jpg', alt: 'Deaf and hearing cyclists riding together at a community event' },
       { image: 'assets/deaf-cyclists-team.jpg', alt: 'Doctors of Hearing Deaf Cyclists team riding in Nairobi' },
-      { image: 'assets/deaf-cyclists-group.jpg', alt: 'Cyclists gathered at the race start' },
-      { image: 'assets/deaf-cyclists-jersey.jpg', alt: 'Doctors of Hearing Deaf Cyclists team jersey' },
-      { image: 'assets/deaf-cyclists-helmet.jpg', alt: 'Blue cycling helmet displayed with the team jersey' },
-      { image: 'assets/deaf-cyclists-celebrate.jpg', alt: 'Deaf Cyclists team members together at an event' }
+      { image: 'assets/deaf-cyclists-event-briefing.jpg', alt: 'Cyclists gather for a race briefing at the Grand Nairobi Race' },
+      { image: 'assets/deaf-cyclists-race-group.jpg', alt: 'Doctors of Hearing Deaf Cyclists prepare for a ride with other riders' },
+      { image: 'assets/deaf-cyclists-race-lineup.jpg', alt: 'Deaf Cyclists and fellow competitors gather at a Nairobi cycling event' },
+      { image: 'assets/deaf-cyclists-finish-line.jpg', alt: 'Deaf Cyclists celebrate at the finish line' }
     ]
   },
   'our-journey-recognised-by-the-media.html': {
