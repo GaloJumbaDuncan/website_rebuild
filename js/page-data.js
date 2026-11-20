@@ -71,8 +71,13 @@ window.pageData = {
   },
   'our-other-specialists.html': { redirect: 'our-team.html' },
   'resources.html': {
-    eyebrow: 'Learn, explore, connect', title: 'BLOG', intro: 'Explore practical information about hearing, tinnitus, balance and ways to care for your hearing.',
-    sections: [['Ask the audiologist', 'Find answers to common questions and learn when it may help to speak with a hearing professional.'], ['Research and patient stories', 'Browse publications and patient experiences shared by Doctors of Hearing.']]
+    eyebrow: 'Learn, explore, connect', title: 'BLOG', intro: 'Stories, news and perspectives on hearing care, inclusion and the people behind Doctors of Hearing.',
+    sections: [],
+    storyCards: [
+      { source: 'Facebook Watch', title: 'A feature on the Deaf Cyclists', description: 'Watch a Facebook feature about the Doctors of Hearing Deaf Cyclists and their journey.', image: 'assets/deaf-cyclists-team.jpg', alt: 'Doctors of Hearing Deaf Cyclists together', href: 'https://www.facebook.com/watch/?v=2011761379596264', action: 'Watch feature' },
+      { source: 'TUKO on Facebook', title: 'Richard Mwangi launches a cycling team', description: 'TUKO shares the story of audiologist Dr Richard Mwangi launching a cycling team for Kenyans with hearing loss.', image: 'assets/deaf-cyclists-ride.jpg', alt: 'Deaf and hearing cyclists riding together', href: 'https://www.facebook.com/tuko.co.ke/posts/nairobi-audiologist-dr-richard-mwangi-has-launched-a-cycling-team-for-kenyans-wi/1048847100720871/', action: 'View Facebook post' },
+      { source: 'TUKO.co.ke', title: 'Meet the team using cycling to build visibility and pride', description: 'Read about Deaf cyclists whose shared rides build community, confidence and visibility.', image: 'assets/deaf-cyclists-celebrate.jpg', alt: 'Doctors of Hearing Deaf Cyclists celebrating together', href: 'https://www.tuko.co.ke/people/family/597552-nairobi-meet-team-deaf-kenyans-using-cycling-a-movement-visibility-pride/', action: 'Read the story' }
+    ]
   },
   'ask-the-audiologist.html': {
     eyebrow: 'Questions & answers', title: 'Ask the audiologist', intro: 'Have a question about hearing or balance? Browse a few starting points, then contact our clinic for guidance about your situation.',
@@ -157,6 +162,7 @@ Object.assign(window.pageData, {
   'maico-diagnostics.html': { eyebrow: 'Audiology equipment', title: 'Maico diagnostics', intro: 'Learn more about audiology diagnostic equipment used in hearing assessment.', sections: [['Clear and careful testing', 'The equipment and tests recommended for you depend on your concerns and clinical assessment.']] },
   'deaf-cyclists.html': {
     eyebrow: 'One team. One vision. No limits.', title: 'Doctors of Hearing Kenya Deaf Cyclists', intro: 'Riding beyond barriers. Inspiring possibilities. Celebrating inclusion. A movement founded by Richard Mwangi and proudly supported by Doctors of Hearing – Kenya.',
+    quickLinksLabel: 'Follow the team',
     heroImage: 'assets/deaf-cyclists-team-banner.jpeg', heroAlt: 'Doctors of Hearing Deaf Cyclists team together outdoors',
     quickLinks: [
       { platform: 'Facebook', audience: 'Deaf Cyclists', mark: 'f', href: 'https://www.facebook.com/share/1JNKw3qHYq/?mibextid=wwXIfr' },

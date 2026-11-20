@@ -388,6 +388,25 @@ h1, h2, h3 { font-family: var(--font-display); }
 .product-gallery-grid figure { display: flex; flex-direction: column; margin: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: white; }
 .product-gallery-grid img { width: 100%; height: 240px; object-fit: contain; background: #f8fafb; }
 .product-gallery-grid figcaption { padding: 12px 15px; color: var(--ink-soft); font-size: 14px; }
+.featured-stories { padding-block: 46px 58px; }
+.featured-stories-heading { max-width: 680px; margin-bottom: 22px; }
+.featured-stories-heading .eyebrow { margin-bottom: 8px; color: var(--blue); }
+.featured-stories-heading h2 { margin: 0 0 8px; font-size: clamp(28px, 3.2vw, 38px); font-weight: 600; letter-spacing: -.05em; line-height: 1.15; }
+.featured-stories-heading > p:last-child { margin: 0; color: var(--ink-soft); font-size: 14px; }
+.featured-story-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; gap: 18px; }
+.featured-story-card { display: flex; min-width: 0; flex-direction: column; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: #fff; box-shadow: 0 8px 25px rgba(18,51,74,.055); }
+.featured-story-image { display: block; height: 190px; overflow: hidden; background: var(--blue-light); }
+.featured-story-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .25s ease; }
+.featured-story-card:hover .featured-story-image img { transform: scale(1.025); }
+.featured-story-copy { display: flex; flex: 1; flex-direction: column; padding: 17px 18px 18px; }
+.featured-story-copy .eyebrow { margin-bottom: 7px; color: var(--blue); font-size: 10px; letter-spacing: .1em; }
+.featured-story-copy h3 { margin: 0 0 9px; font-size: 19px; font-weight: 650; letter-spacing: -.025em; line-height: 1.28; }
+.featured-story-copy h3 a:hover { color: var(--blue); }
+.featured-story-copy > p:not(.eyebrow) { margin: 0 0 16px; color: var(--ink-soft); font-size: 13px; line-height: 1.65; }
+.featured-story-link { display: inline-flex; align-items: center; gap: 7px; margin-top: auto; padding-top: 8px; color: var(--blue); font-size: 13px; font-weight: 700; }
+.featured-story-link:hover { color: var(--blue-dark); }
+@media (max-width: 800px) { .featured-story-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .featured-stories { padding-block: 32px 42px; } .featured-story-grid { grid-template-columns: 1fr; gap: 14px; } .featured-story-image { height: 210px; } }
 .faq-section.container { padding-block: 42px 58px; }
 .faq-section.container h2 { margin: 0 0 22px; font-size: clamp(28px,3.5vw,40px); }
 @media (max-width: 700px) { .product-gallery-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; } .product-gallery-grid img { height: 170px; } }
@@ -614,6 +633,19 @@ h1, h2, h3 { font-family: var(--font-display); }
 .social-card-copy small { color: #627783; font-size: 12px; }
 .social-card-arrow { margin-left: auto; font-size: 16px; }
 @media (max-width: 560px) { .page-quick-links > div { grid-template-columns: 1fr; } }
+
+#page-content.deaf-cyclists-page .page-quick-links { margin: 20px 0 18px; padding: 0; border: 0; border-radius: 0; background: transparent; }
+#page-content.deaf-cyclists-page .page-quick-links-label { margin-bottom: 9px; color: var(--blue); font-size: 10px; letter-spacing: .1em; }
+#page-content.deaf-cyclists-page .page-quick-links > div { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; }
+#page-content.deaf-cyclists-page .social-card { min-width: 0; min-height: 48px; gap: 7px; padding: 7px 8px; border-color: rgba(18,51,74,.1); border-radius: 7px; background: rgba(255,255,255,.56); }
+#page-content.deaf-cyclists-page .social-card:hover, #page-content.deaf-cyclists-page .social-card:focus-visible { transform: translateY(-1px); border-color: rgba(18,51,74,.3); background: rgba(255,255,255,.9); box-shadow: 0 5px 12px rgba(18,51,74,.08); }
+#page-content.deaf-cyclists-page .social-card-mark { width: 30px; height: 30px; flex-basis: 30px; border-radius: 6px; font-size: 15px; }
+#page-content.deaf-cyclists-page .social-card-copy { min-width: 0; gap: 1px; }
+#page-content.deaf-cyclists-page .social-card-copy strong { font-size: 11px; }
+#page-content.deaf-cyclists-page .social-card-copy small { overflow: hidden; font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
+#page-content.deaf-cyclists-page .social-card-arrow { font-size: 12px; }
+@media (max-width: 560px) { #page-content.deaf-cyclists-page .page-quick-links > div { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 360px) { #page-content.deaf-cyclists-page .page-quick-links > div { grid-template-columns: 1fr; } }
 
 /* Team index and individual profiles */
 .profile-list-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; margin: 0; padding: 34px 0 56px; }
