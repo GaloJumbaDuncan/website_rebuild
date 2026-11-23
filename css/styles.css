@@ -537,6 +537,7 @@ h1, h2, h3 { font-family: var(--font-display); }
 .booking-intro, .booking-note { color: var(--muted); font-size: 13px; line-height: 1.6; }
 .booking-intro { margin: 17px 0 21px; }
 .booking-dialog form { display: grid; grid-template-columns: 1fr 1fr; gap: 15px 14px; }
+.required-mark { color: #b42318; font-weight: 700; }
 .booking-dialog label { display: grid; gap: 6px; color: var(--ink-soft); font-size: 12px; font-weight: 700; }
 .booking-dialog input, .booking-dialog select, .booking-dialog textarea { width: 100%; min-height: 44px; padding: 10px 11px; border: 1px solid #cbd8de; border-radius: 4px; background: #fff; color: var(--ink); font: inherit; font-size: 14px; }
 .booking-dialog textarea { min-height: 82px; resize: vertical; }

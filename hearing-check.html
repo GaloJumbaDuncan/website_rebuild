@@ -121,11 +121,12 @@
     <div class="booking-dialog-head"><div><p class="eyebrow">Start your journey</p><h2 id="booking-title">Book your assessment</h2></div><button class="dialog-close" type="button" aria-label="Close form" data-close-booking>×</button></div>
     <p class="booking-intro">Share your details and our team will get in touch to discuss a suitable appointment.</p>
     <form id="booking-request" action="https://formsubmit.co/incusear@gmail.com" method="POST">
+      <input type="hidden" name="_next" value="https://doctorsofhearing.org/thank-you.html">
       <input type="hidden" name="_subject" value="Assessment appointment enquiry from Doctors of Hearing website">
       <input type="hidden" name="_url" value="https://doctorsofhearing.org/">
-      <label>Full name<input name="name" autocomplete="name" required></label>
-      <label>Phone number<input name="phone" type="tel" autocomplete="tel" required></label>
-      <label>Email address<input name="email" type="email" autocomplete="email" required></label>
+      <label>Full name <span class="required-mark" aria-hidden="true">*</span><input name="name" autocomplete="name" required></label>
+      <label>Phone number <span class="required-mark" aria-hidden="true">*</span><input name="phone" type="tel" autocomplete="tel" required></label>
+      <label>Email address <span class="required-mark" aria-hidden="true">*</span><input name="email" type="email" autocomplete="email" required></label>
       <label>What would you like help with?
         <select name="service" required><option value="" disabled selected>Select a service</option><option>Hearing assessment</option><option>Balance assessment</option><option>Hearing aids</option><option>Paediatric audiology</option><option>Other enquiry</option></select>
       </label>
