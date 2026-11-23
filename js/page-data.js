@@ -49,7 +49,7 @@ window.pageData = {
     profiles: [
       { name: 'Richard Mwangi', role: 'Lead Consultant Audiologist', credentials: 'Msc, Clin. Au.D.', image: 'assets/richard.jpeg', alt: 'Richard Mwangi, Lead Consultant Audiologist', href: 'richard-mwangi.html', bio: ['Richard is a consultant audiologist with more than 20 years of experience in hearing healthcare.'] },
       { name: 'Eva Mwangi', role: 'Consultant Audiologist | Hearing & Balance Specialist', credentials: 'Msc, Clin. Au.D.', image: 'assets/eva-mwangi.jpg', alt: 'Eva Mwangi, Consultant Audiologist', href: 'eva-mwangi.html', bio: ['Eva has more than 13 years of clinical experience in hearing healthcare across East Africa.'] },
-      { name: 'Caroline Maina', role: 'Clinic Operations Manager', credentials: 'Doctors of Hearing Ltd', image: 'assets/caroline-wanjiku-maina.png', alt: 'Caroline Maina, Clinic Operations Manager', href: 'caroline-wanjiku-maina.html', bio: ['Caroline brings over eight years of experience in operations management, administration and patient service delivery.'] },
+      { name: 'Caroline Maina', role: 'Clinic Operations Manager', credentials: 'Operations Manager', image: 'assets/caroline-wanjiku-maina.png', alt: 'Caroline Maina, Clinic Operations Manager', href: 'caroline-wanjiku-maina.html', bio: ['Caroline brings over eight years of experience in operations management, administration and patient service delivery.'] },
       { name: 'GianPaolo Mazzoni', role: 'Electrophysiology Consultant', credentials: 'Ph.D. · Biomedical Engineer', image: 'assets/GianPaolo-225x300.jpg', alt: 'Prof. GianPaolo Mazzoni', href: 'gianpaolo-mazzoni.html', bio: ['Consultant specialising in electrophysiology, auditory evoked potentials and tele-audiology.'] }
     ]
   },
